@@ -13,7 +13,6 @@ class TaskManager(QMainWindow):
         super().__init__()
         self.setWindowTitle("Task Manager Tool")
         self.setGeometry(100, 100, 1000, 600)
-
         self.main_layout = QHBoxLayout()
 
         # Navigation Panel
@@ -149,6 +148,7 @@ class TaskManager(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setStyle("Fusion")
     window = TaskManager()
     window.show()
     sys.exit(app.exec_())
